@@ -1,19 +1,25 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
+import { Nav } from './nav';
+
+// TODO: Fix the minimum width of the header
+
+const Header = () => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `black`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
+        display: `flex`,
+        flexDirection: `row`,
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        maxWidth: `100vw`,
+        minWidth: `400px`,
+        padding: `1rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -24,19 +30,12 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Metal Detector
         </Link>
       </h1>
+      <Nav />
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

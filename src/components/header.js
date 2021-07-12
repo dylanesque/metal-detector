@@ -3,13 +3,12 @@ import { Link } from "gatsby"
 
 import { Nav } from './nav';
 
-// TODO: Fix the minimum width of the header
-
 const Header = () => (
   <header
     style={{
       background: `black`,
       marginBottom: `1.45rem`,
+      maxWidth: '100%'
     }}
   >
     <div
@@ -18,7 +17,6 @@ const Header = () => (
         flexDirection: `row`,
         margin: `0 auto`,
         maxWidth: `100vw`,
-        minWidth: `400px`,
         padding: `1rem 1.0875rem`,
       }}
     >

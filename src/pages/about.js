@@ -1,4 +1,6 @@
-export function About() {
+import * as React from 'react';
+
+export default function About() {
     return (
         <>
         <h2>What is Metal Detector?</h2>

@@ -381,6 +381,10 @@ nav a:hover {
   color: var(--lightRed);
 }
 
+p {
+  width: 75ch;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
